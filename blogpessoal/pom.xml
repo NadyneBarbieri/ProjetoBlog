@@ -3,7 +3,7 @@
 	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
-	<parent>
+	<parent> 
 		<groupId>org.springframework.boot</groupId>
 		<artifactId>spring-boot-starter-parent</artifactId>
 		<version>2.6.3</version>
@@ -19,6 +19,10 @@
 	</properties>
 	<dependencies>
 		<dependency>
+			<groupId>org.postgresql</groupId>
+			<artifactId>postgresql</artifactId>
+		</dependency>
+		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-data-jpa</artifactId>
 		</dependency>
@@ -32,20 +36,14 @@
 			<artifactId>springdoc-openapi-ui</artifactId>
 			<version>1.5.13</version>
 		</dependency>
-		
+
 		<!-- Dependência do Spring Security -->
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-security</artifactId>
 		</dependency>
-<!-- DEPENDENCIA DO SWAGGER -->
-		<dependency>
-			<groupId>org.springdoc</groupId>
-			<artifactId>springdoc-openapi-ui</artifactId>
-			<version>1.5.13</version>
-		</dependency>
-
-
+	
+	
 		<!-- Dependência para Codificação do Token -->
 		<dependency>
 			<groupId>commons-codec</groupId>
@@ -72,7 +70,7 @@
 					<artifactId>junit-vintage-engine</artifactId>
 				</exclusion>
 			</exclusions>
-		
+
 		</dependency>
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
@@ -83,7 +81,7 @@
 			<artifactId>h2</artifactId>
 			<scope>runtime</scope>
 		</dependency>
-		
+
 	</dependencies>
 
 	<build>
